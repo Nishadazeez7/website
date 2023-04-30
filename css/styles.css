@@ -39,6 +39,11 @@ p {
   width: 40%;
   margin: auto;
 }
+.intro1 {
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+}
 .profile {
   padding-bottom: 30px
 }
@@ -112,7 +117,6 @@ a:hover {
 }
 .contact-me {
   padding: 30px;
-  margin-top: 50px;
 }
 .middle-container {
   padding-top: 100px;
