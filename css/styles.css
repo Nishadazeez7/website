@@ -79,6 +79,10 @@ a:hover {
 .skill-img {
     float: left;
     margin-right: 30px;
+    max-height: 150px;
+    max-width: 200px;
+    width: 120px;
+    height: 120px;
 }
 .skill2-img {
     float: right;
