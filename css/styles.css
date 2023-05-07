@@ -46,8 +46,7 @@ p {
 .mount {
   position: relative;
   margin-bottom: 0;
-  width: 50%;
-  height: 50%;
+  width: 30%;
 }
 .bottom-cloud {
   position: absolute;
