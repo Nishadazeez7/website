@@ -34,6 +34,7 @@ p {
 }
 .top-container {
   background-color: #e0ebe8;
+  padding: 10px;
 }
 .intro {
   width: 40%;
