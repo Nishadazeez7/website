@@ -3,27 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MSc Dissertation — Project</title>
+  <title>MSc Dissertation — Petrogenetic Modelling</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    .pdf-wrap{height:calc(100vh - 84px);margin:12px}
-    iframe{width:100%;height:100%;border:1px solid #e6efee;border-radius:6px}
-    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px}
+    body { margin: 0; background: #f9fdfd; }
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+      background: #e0f5f4;
+      border-bottom: 1px solid #d6e9e8;
+      z-index: 20;
+    }
+    .topbar h3 {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--teal);
+      font-weight: 600;
+    }
+    .pdf-wrap {
+      height: calc(100vh - 56px);
+      margin-top: 56px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="topbar">
-    <div style="display:flex;gap:12px;align-items:center">
-      <a href="index.html" class="btn btn-outline">← Back</a>
-      <h3 style="margin:0;color:var(--teal)">MSc Dissertation — Petrogenetic Modelling</h3>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="index.html" class="btn btn-outline" style="padding:4px 10px;">← Back</a>
+      <h3>MSc Dissertation — Petrogenetic Modelling</h3>
     </div>
-    <div>
-      <a class="btn btn-primary" href="MSc Dissertation.pdf" download>Download PDF</a>
-    </div>
+    <a class="btn btn-primary" href="MSc Dissertation.pdf" download style="padding:6px 12px;">Download PDF</a>
   </div>
 
   <div class="pdf-wrap">
-    <iframe src="MSc Dissertation.pdf" title="MSc Dissertation PDF" frameborder="0"></iframe>
+    <iframe src="MSc Dissertation.pdf" title="MSc Dissertation PDF"></iframe>
   </div>
 </body>
 </html>
