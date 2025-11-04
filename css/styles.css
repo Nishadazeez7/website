@@ -3,6 +3,8 @@ body {
   text-align: center;
   font-family: 'Satisfy', cursive;
   background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 hr {
    border-style: none;
@@ -19,15 +21,15 @@ h1 {
   color: #11999E;
 }
 .heading-2 {
-      font-family: 'Satisfy', 'brandon-grotesque','HelveticaNeue-Light',"Helvetica Neue Light",
-      "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: 'Satisfy', 'brandon-grotesque', 'HelveticaNeue-Light', "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 30px;
   color: #11999E;
   font-weight: normal;
 }
 p {
-      font-family: 'brandon-grotesque','HelveticaNeue-Light',"Helvetica Neue Light",
-      "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: 'brandon-grotesque', 'HelveticaNeue-Light', "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px;
   color: #11999E;
   line-height: 2;
@@ -35,6 +37,17 @@ p {
 .top-container {
   background-color: #e0ebe8;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-left {
+  flex: 2;
+}
+.top-right {
+  flex-shrink: 0;
+}
+.mount {
+  width: 30%;
 }
 .intro {
   width: 40%;
@@ -42,18 +55,12 @@ p {
   padding: 30px;
 }
 .profile {
-  padding-bottom: 30px
-}
-.mount {
-  position: relative;
-  margin-bottom: 0;
-  width: 30%;
+  padding-bottom: 30px;
 }
 .bottom-cloud {
   position: absolute;
   transition: all 1s ease-in-out;
 }
-
 .top-cloud {
   position: relative;
   left: 200px;
@@ -76,21 +83,20 @@ a:hover {
   width: 40%;
   margin: 100px auto;
   text-align: left;
-
 }
 .skill-img {
-    float: left;
-    margin-right: 30px;
-    max-height: 100px;
-    max-width: 100px;
-    width: 100px;
-    height: 100px;
+  float: left;
+  margin-right: 30px;
+  max-height: 100px;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
 }
 .skill2-img {
-    float: right;
-    margin-left: 20px;
-    width: 90px;
-    height: 90px;
+  float: right;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
 }
 .btn {
   background: #11cdd4;
@@ -102,8 +108,8 @@ a:hover {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
-  font-family: 'brandon-grotesque','HelveticaNeue-Light',"Helvetica Neue Light",
-  "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-family: 'brandon-grotesque', 'HelveticaNeue-Light', "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #ffffff;
   font-size: 20px;
   padding: 7px 15px 7px 15px;
@@ -138,4 +144,203 @@ a:hover {
 }
 .footer-link {
   padding: 10px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #11999E; /* Choose a color that matches your theme */
+  position: absolute;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #EAF6F6; /* Change color on hover */
+  color: #11999E;
+}
+
+.navbar a.active {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #11999E;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Existing styles for navbar... */
+
+.navbar a:visited,
+.navbar a:active,
+.dropdown:hover .dropbtn {
+  background-color: #11999E; /* Use the same color for visited and active links */
+  color: white;
+}
+
+/* Rest of your existing styles... */
+
+}
+
+.dropdown-content a:hover {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #11999E; /* Choose a color that matches your theme */
+}
+
+.navbar li {
+  float: left;
+
+}
+/* Existing styles for navbar... */
+
+.navbar a:visited,
+.navbar a:active,
+.dropdown:hover .dropbtn {
+  background-color: #11999E; /* Use the same color for visited and active links */
+  color: white;
+}
+
+/* Rest of your existing styles... */
+
+.navbar a, .navbar .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #EAF6F6; /* Change color on hover */
+  color: #11999E;
+}
+
+.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #11999E;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Existing styles for dropdown content... */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #11999E;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: left; /* Align text to the left */
+}
+
+/* Make list items block elements, stacking them vertically */
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+/* Rest of your existing styles... */
+
+
+.dropdown-content a:hover {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar a[href="#contact-section"].active {
+  background-color: #EAF6F6;
+  color: #11999E;
+}
+#myNavbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar.sticky {
+  background-color: #11999E; /* Choose a color that matches your theme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.sticky a {
+  color: white;
+}
+
+.navbar.sticky a:hover, .dropdown.sticky:hover .dropbtn {
+  background-color: #EAF6F6;
+  color: #11999E;
 }
