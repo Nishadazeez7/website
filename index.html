@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Nishad - GIS Expert & Programmer</title>
@@ -8,16 +7,58 @@
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&
-  family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="top-container">
-    <h1>Welcome, I'm Nishad.</h1>
-    <h2 class="heading-2">Crafting Geospatial Solutions & Code Magic.</h2>
-    <img class="mount" src="GIS_header-icon-art.png" alt="mountain-img">
+  <div class="top-container" id="topContainer">
+    <div class="top-left">
+      <h1>NeoSpatial Solutions</h1>
+      <h2 class="heading-2">Crafting Geospatial Solutions & Code Magic.</h2>
+    </div>
+    <div class="top-right">
+      <img class="mount" src="GIS_header-icon-art.png" alt="mountain-img">
+    </div>
+
+    <ul class="navbar" id="myNavbar">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#solutions">Solutions</a>
+        <ul class="dropdown-content">
+          <li><a href="#energy">Energy & Utilities</a></li>
+          <li><a href="#telecom">Telecommunications</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#navigation">Navigation & Mapping</a></li>
+          <li><a href="#land">Land and Infrastructure</a></li>
+          <li><a href="#land-use">Land Use & Land Cover</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#services">Services</a>
+        <ul class="dropdown-content">
+          <li><a href="#mapping">GIS Mapping Services</a></li>
+          <li><a href="#utilities">Utilities</a></li>
+          <li><a href="#cartography">Cartography Services</a></li>
+          <li><a href="#supply-chain">Supply Chain Management</a></li>
+          <li><a href="#web-mobile">GIS Web & Mobile Application</a></li>
+          <li><a href="#remote-sensing">Remote Sensing</a></li>
+          <li><a href="#data-digitization">Data Digitization</a></li>
+          <li><a href="#urban-planning">Urban Planning</a></li>
+          <li><a href="#photogrammetry">Digital Photogrammetry</a></li>
+          <li><a href="#data-conversion">GIS Data Conversion</a></li>
+          <li><a href="#consultancy">GIS Consultancy</a></li>
+          <li><a href="#pole-loading">Pole Loading Analysis</a></li>
+          <li><a href="#mining-geology">Mining and Geology</a></li>
+          <li><a href="#electricity">Electricity</a></li>
+          <li><a href="#telecom-mapping">GIS Telecommunications Mapping</a></li>
+          <li><a href="#real-estate">Real Estate</a></li>
+          <li><a href="#land-surveying">Land Surveying</a></li>
+        </ul>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
   </div>
+
   <div class="middle-container">
     <div class="profile">
       <img src="latest.jpg" alt="Nishad's Photo">
@@ -49,7 +90,7 @@
       </div>
     </div>
     <hr>
-    <div class="contact-me">
+    <div class="contact-me" id="contact-section">
       <h2>Let's Connect</h2>
       <p class="intro1">Whether you seek a virtuoso programmer for custom GIS applications or require assistance in GIS analysis and mapping, I am the catalyst for your project's evolution. Reach out today to discover how my expertise can elevate your endeavors.</p>
       <a class="btn" href="mailto:nishadazeez7@gmail.com">GET IN TOUCH</a>
@@ -61,6 +102,39 @@
     <a class="footer-link" href="https://www.facebook.com/nishad.azeez.39/">Facebook</a>
     <p class="bot-para">© 2022 NISHAD AZEEZ.</p>
   </div>
-</body>
 
+  <!-- Add this script before the closing </body> tag -->
+  <script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        document.querySelectorAll('.navbar a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    var navbar = document.getElementById("myNavbar");
+    var sticky = navbar.offsetTop;
+
+    window.onscroll = function() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    function scrollToTopContainer() {
+      var topContainer = document.querySelector(".top-container");
+      topContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    var homeLink = document.querySelector('a[href="#home"]');
+    homeLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      scrollToTopContainer();
+    });
+  </script>
+</body>
 </html>
