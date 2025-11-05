@@ -5,143 +5,223 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nishad Azeez — GIS Team Lead</title>
   <link rel="icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <nav class="nav" role="navigation" aria-label="Top navigation">
-    <div class="container">
-      <a class="brand" href="#home">
-        <img src="GIS_header-icon-art.png" alt="logo">
-        <span>Nishad Azeez — NeoSpatial</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Sidebar navigation">
+    <div class="logo">
+      <img src="images/GIS_header-icon-art.png" alt="Logo">
+      <div class="brand">
+        <h2>Nishad Azeez</h2>
+        <p>GIS Team Lead</p>
       </div>
     </div>
-  </nav>
 
-  <main class="page" id="home">
-    <header class="hero">
-      <div class="intro">
-        <h1>Hi — I’m Nishad</h1>
-        <h2>GIS Team Lead • Geospatial Engineer • Web Mapping & GIS App Dev</h2>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="Nishad's Resume.pdf" class="btn-resume" download>Download Resume</a>
+    </nav>
 
-        <!-- Updated intro/lead (exact text supplied by user) -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nishad-722368202/" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/nishadazeez7" target="_blank">Twitter</a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-text fade-left">
+        <h1>Hello, I'm <span class="highlight">Nishad</span></h1>
+        <h2>GIS Expert • Team Lead • Web Mapping Enthusiast</h2>
         <p class="lead">
-          3+ years leading GIS teams and delivering mapping, utility & telecom mapping, spatial data conversion and web mapping prototypes. Strong in ArcGIS & QGIS, spatial databases (PostGIS), and practical scripting for automation. (Experience & awards excerpted from my resume).
-        </p>
-        <!-- small source / download link -->
-        <p style="margin:6px 0 12px 0;font-size:0.9rem;color:#4f7777;">
-          Source: <a href="Nishad's Resume.pdf" download>Resume (download)</a>
+          3+ years leading GIS teams and delivering mapping, utility & telecom mapping, spatial data conversion and web mapping prototypes.
+          Strong in ArcGIS & QGIS, spatial databases (PostGIS), and practical scripting for automation.
         </p>
 
-        <div class="actions">
-          <a class="btn btn-primary" href="#contact">Hire / Contact</a>
-          <a class="btn btn-outline" href="Nishad's Resume.pdf" download>Download Resume</a>
+        <div class="buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="mailto:nishadazeez7@gmail.com" class="btn outline">Contact Me</a>
         </div>
 
-        <div class="skill-list">
+        <div class="skill-row">
           <span class="skill-pill">ArcGIS & QGIS</span>
-          <span class="skill-pill">Spatial Analysis</span>
-          <span class="skill-pill">PostGIS & Databases</span>
-          <span class="skill-pill">Web Mapping (Leaflet/Mapbox)</span>
-          <span class="skill-pill">Automation (ArcPy / Python)</span>
+          <span class="skill-pill">PostGIS</span>
+          <span class="skill-pill">Web Mapping</span>
+          <span class="skill-pill">Python / ArcPy</span>
           <span class="skill-pill">Team Leadership</span>
         </div>
       </div>
 
-      <aside class="photo-card">
-        <img src="latest.jpg" alt="Nishad">
-        <div class="role">GIS Team Lead / Geospatial Developer</div>
-        <div class="muted">Bangalore, India • <a href="mailto:nishadazeez7@gmail.com">nishadazeez7@gmail.com</a></div>
-      </aside>
-    </header>
+      <div class="hero-image fade-right">
+        <!-- Floating image block (animated: enters from right; hides on scrolldown) -->
+        <div class="floating-wrap">
+          <img id="floatingPhoto" class="floating-photo" src="images/latest.jpg" alt="Nishad photo">
+        </div>
+      </div>
+    </section>
 
-    <section id="about" class="card">
-      <h3>About</h3>
-      <p class="muted">
-        I lead GIS teams to deliver high-volume mapping and spatial-data pipelines. At Wipro I scaled
-        operations, monitored SLAs and mentored leads while improving data accuracy and delivery — see
-        highlights in my resume.
+    <!-- ABOUT -->
+    <section id="about" class="section fade-up">
+      <h2>About</h2>
+      <p>
+        I lead GIS teams to deliver high-volume mapping and spatial-data pipelines. At Wipro I scaled operations,
+        improved QA processes and mentored leads while ensuring timely delivery of geospatial solutions.
       </p>
 
       <div class="cards">
-        <div class="card">
+        <div class="card hl-card hover-up">
           <h3>Professional highlights</h3>
-          <ul class="muted">
+          <ul>
             <li>Team Lead — directed multiple team leads & 60+ operators; improved QA & delivery (Wipro).</li>
-            <li>Point-of-Contact for Uber / maps projects; resolved routing, POI, basemap issues.</li>
-            <li>Performed spatial analysis, LULC mapping and data conversion for government and private clients.</li>
+            <li>Point-of-Contact for mapping projects — resolved routing, POI, basemap issues.</li>
+            <li>Delivered LULC mapping, data conversion, and web mapping prototypes for clients.</li>
           </ul>
         </div>
 
-        <div class="card">
-          <h3>Education & Certifications</h3>
-          <p class="muted"><strong>MSc — Applied Geology</strong> (Aligarh Muslim University, 2021)</p>
-          <p class="muted">Short course in Remote Sensing & GIS (MGU). Multiple Python & ArcPy courses.</p>
+        <div class="card hl-card hover-up">
+          <h3>Education</h3>
+          <p><strong>MSc — Applied Geology</strong> (2021). Dissertation: petrogenetic modelling of mafic volcanics.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="card">
-      <h3>Selected Projects</h3>
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-up">
+      <h2>Selected Projects</h2>
+      <div class="project-grid">
+        <article class="project-card hover-up">
+          <h3>Malampuzha — Sedimentation Estimation</h3>
+          <p>Reservoir sedimentation study using NDWI-based water-area extraction and prismoidal volume estimates (2009–2018).</p>
+          <a class="btn small" href="malampuzha.html">Open PDF</a>
+        </article>
 
-      <div class="cards">
-        <div class="card project-tile">
-          <h4>Estimation of Sedimentation Rate — Malampuzha Reservoir</h4>
-          <p class="muted">Reservoir sedimentation study using remote sensing & GIS: NDWI extraction, water-area to capacity calculations, prismoidal volume estimates and change analysis for 2009–2018. Click to view full PDF.</p>
-          <a class="btn btn-outline" href="malampuzha.html">Open Project →</a>
-        </div>
-
-        <div class="card project-tile">
-          <h4>MSc Dissertation — Petrogenetic Modelling of Mafic Volcanic Rocks</h4>
-          <p class="muted">Dissertation on petrogenetic modelling, REE and trace-element analysis of mafic volcanics. Click to read the full thesis.</p>
-          <a class="btn btn-outline" href="dissertation.html">Open Project →</a>
-        </div>
+        <article class="project-card hover-up">
+          <h3>MSc Dissertation — Petrogenetic Modelling</h3>
+          <p>Petrogenetic modelling and geochemical analysis of mafic volcanic rocks; thesis presented with GIS-supported mapping.</p>
+          <a class="btn small" href="dissertation.html">Open PDF</a>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h3>Contact</h3>
-      <div class="contact-grid">
-        <div>
-          <p class="muted">Interested in GIS consulting, mapping pipelines, or web mapping? Let's talk.</p>
-          <p><strong>Email:</strong> <a href="mailto:nishadazeez7@gmail.com">nishadazeez7@gmail.com</a></p>
-          <p><strong>Phone:</strong> +91 9846998853</p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nishad-722368202/" target="_blank">nishad-722368202</a></p>
-        </div>
-
-        <aside class="card" style="background:var(--muted);">
-          <h4 style="color:var(--teal)">Availability</h4>
-          <p class="muted">Open to contract & full-time roles. Based in India; available for remote collaboration.</p>
-          <a class="btn btn-primary" href="mailto:nishadazeez7@gmail.com">Contact</a>
-        </aside>
-      </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-up">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate on GIS mapping, spatial pipelines or web maps — get in touch.</p>
+      <p><strong>Email:</strong> <a href="mailto:nishadazeez7@gmail.com">nishadazeez7@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9846998853</p>
     </section>
 
     <footer>
-      © <span id="year"></span> Nishad Azeez
+      © <span id="year"></span> Nishad Azeez — Kozhikode, Kerala
     </footer>
   </main>
 
+  <!-- SCRIPT: interactions & animations -->
   <script>
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-    // smooth nav
-    document.querySelectorAll('.nav-links a').forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const t = document.querySelector(a.getAttribute('href'));
-        if(t) t.scrollIntoView({behavior:'smooth'});
-        document.querySelectorAll('.nav-links a').forEach(x=>x.classList.remove('active'));
-        a.classList.add('active');
+
+    // Smooth nav + active state
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if(href && href.startsWith('#')){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+          link.classList.add('active');
+        }
       });
     });
+
+    // Scroll reveal for fade-up / left / right elements
+    (function(){
+      const revealEls = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.18 });
+      revealEls.forEach(el => io.observe(el));
+    })();
+
+    // Floating photo behaviour:
+    (function(){
+      const photo = document.getElementById('floatingPhoto');
+      const hero = document.querySelector('.hero');
+      if(!photo || !hero) return;
+
+      // Respect reduced motion
+      const prefersReduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(prefersReduce){
+        photo.classList.add('visible');
+        return;
+      }
+
+      // track scroll direction
+      let lastY = window.scrollY || 0;
+      let scrollingDown = true;
+      window.addEventListener('scroll', ()=> {
+        const y = window.scrollY || 0;
+        scrollingDown = (y > lastY);
+        lastY = y;
+      }, {passive:true});
+
+      // IntersectionObserver to control photo states
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            // hero in view -> show image by removing hide state & adding visible
+            photo.classList.remove('hide-right');
+            // small RAF to ensure transition works
+            requestAnimationFrame(()=> photo.classList.add('visible'));
+          } else {
+            // hero out of view -> hide depending on scroll direction
+            if(scrollingDown){
+              photo.classList.remove('visible');
+              setTimeout(()=> photo.classList.add('hide-right'), 60);
+            } else {
+              // scrolled up past hero - keep hidden until re-enter
+              photo.classList.remove('visible');
+              photo.classList.remove('hide-right');
+            }
+          }
+        });
+      }, { threshold: 0.12 });
+
+      io.observe(hero);
+
+      // subtle parallax when inside hero
+      let raf = null;
+      window.addEventListener('scroll', () => {
+        if(raf) return;
+        raf = requestAnimationFrame(()=> {
+          raf = null;
+          const rect = hero.getBoundingClientRect();
+          if(rect.top < window.innerHeight && rect.bottom > 0){
+            // progress in [-1 .. 1]
+            const progress = (rect.top - window.innerHeight) / (rect.height + window.innerHeight);
+            const offset = Math.max(-12, Math.min(12, -progress * 12));
+            if(photo.classList.contains('visible')){
+              photo.style.transform = `translateX(0) translateY(${offset}px) scale(1)`;
+            }
+          } else {
+            if(photo.classList.contains('visible')){
+              photo.style.transform = `translateX(0) translateY(0) scale(1)`;
+            } else {
+              photo.style.transform = '';
+            }
+          }
+        });
+      }, {passive:true});
+    })();
   </script>
 </body>
 </html>
