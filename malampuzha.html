@@ -3,28 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Malampuzha Reservoir — Project</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Malampuzha — Sedimentation Estimation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    .pdf-wrap{height:calc(100vh - 84px);margin:12px}
-    iframe{width:100%;height:100%;border:1px solid #e6efee;border-radius:6px}
-    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px}
+    :root{
+      --teal:#00b9a9;
+      --bg:#f7fffe;
+      --dark:#022c2c;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      display:flex;
+      flex-direction:column;
+      height:100vh;
+      overflow:hidden;
+    }
+
+    /* Topbar */
+    .topbar{
+      background:#e0f5f4;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 18px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.05);
+      z-index:12;
+    }
+    .topbar .left { display:flex; align-items:center; gap:12px; }
+    .topbar h3 { margin:0; font-weight:600; color:var(--teal); font-size:1rem; }
+    .btn-back, .btn-download {
+      text-decoration:none;
+      font-weight:600;
+      padding:6px 12px;
+      border-radius:8px;
+      transition:background .25s;
+    }
+    .btn-back { background:#d9f2f1; color:#083; }
+    .btn-back:hover { background:var(--teal); color:white; }
+    .btn-download { background:var(--teal); color:white; }
+    .btn-download:hover { background:#009b8d; }
+
+    /* PDF container - fills remaining viewport */
+    .pdf-container{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:stretch;
+      height:calc(100vh - 56px);
+      width:100%;
+      overflow:hidden;
+      background:var(--bg);
+    }
+
+    /* iframe spans whole area */
+    iframe{
+      border:none;
+      width:100%;
+      height:100%;
+      display:block;
+      margin:0;
+      padding:0;
+    }
+
+    /* safety: ensure the embed doesn't get default margins or transforms */
+    embed, iframe { transform:none !important; margin:0 !important; padding:0 !important; }
   </style>
 </head>
 <body>
   <div class="topbar">
-    <div style="display:flex;gap:12px;align-items:center">
-      <a href="index.html" class="btn btn-outline">← Back</a>
-      <h3 style="margin:0;color:var(--teal)">Estimation of Sedimentation Rate — Malampuzha Reservoir</h3>
+    <div class="left">
+      <a href="index.html" class="btn-back">← Back</a>
+      <h3>Malampuzha — Estimation of Sedimentation Rate</h3>
     </div>
-    <div>
-      <a class="btn btn-primary" href="Malampuzha.pdf" download>Download PDF</a>
-    </div>
+    <a class="btn-download" href="Malampuzha.pdf" download>Download PDF</a>
   </div>
 
-  <div class="pdf-wrap">
-    <!-- embed PDF full -->
-    <iframe src="Malampuzha.pdf" title="Malampuzha project PDF" frameborder="0"></iframe>
+  <div class="pdf-container" role="region" aria-label="Malampuzha PDF viewer">
+    <!-- #view=fitH suggests the PDF viewer fit width to viewport -->
+    <iframe src="Malampuzha.pdf#view=fitH" title="Malampuzha PDF"></iframe>
   </div>
 </body>
 </html>
